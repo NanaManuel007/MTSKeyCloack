@@ -12,8 +12,7 @@ function ResetPasswordPage(props: PageProps<"login-reset-password.ftl">) {
 
   return (
     <Template i18n={i18n} kcContext={kcContext}>
-      <div className="flex flex-col items-center justify-center font-poppins relative pt-20 px-4 sm:px-0">
-        {/* show error */}
+           {/* show error */}
         {(kcContext.message && kcContext.message.type === "error") || hasUsernameError ? (
           <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-md text-red-700 text-sm w-full sm:w-[770px]">
             <span
@@ -25,6 +24,8 @@ function ResetPasswordPage(props: PageProps<"login-reset-password.ftl">) {
             />
           </div>
         ) : null}
+      <div className="flex flex-col items-center justify-center font-poppins relative pt-20 px-4 sm:px-0">
+   
         <img src={graLogo} alt="gra logo" className="w-[80px] object-cover absolute sm:top-[110px] top-[110px] z-20 pb-10" />
         <div className="w-full sm:w-[770px] overflow-hidden bg-white rounded-2xl shadow-2xl h-auto sm:h-[580px]">
           <div className="flex flex-col">

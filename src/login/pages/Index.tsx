@@ -117,8 +117,7 @@ const LoginPage = (props: PageProps<"login.ftl">) => {
 
   return (
     <Template i18n={i18n} kcContext={kcContext}>
-      <div className="flex flex-col items-center justify-center font-poppins relative pt-20 px-4 sm:px-0">
-        {kcContext.message && (
+            {kcContext.message && (
           <div
             className={`mb-4 p-4 border rounded-md text-sm w-full sm:w-[770px] ${
               kcContext.message.type === "error"
@@ -131,7 +130,9 @@ const LoginPage = (props: PageProps<"login.ftl">) => {
             />
           </div>
         )}
-        <img src={graLogo} alt="gra logo" className="w-[80px] object-cover absolute sm:top-[110px] top-[110px] z-20 pb-10" />
+      <div className="flex flex-col items-center justify-center font-poppins relative pt-10 px-4 sm:px-0">
+  
+        <img src={graLogo} alt="gra logo" className="w-[80px] object-cover absolute sm:top-[70px] top-[60px] z-20 pb-10" />
         <div className="w-full sm:w-[770px] overflow-hidden bg-white rounded-2xl shadow-2xl h-auto sm:h-[610px]">
           <div className="flex flex-col">
             <h1 className="w-full text-center text-3xl font-bold text-gray-800 pt-[100px] sm:pt-[140px]">Sign In MTS</h1>

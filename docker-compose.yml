@@ -19,6 +19,14 @@ services:
       - ./dist_keycloak:/opt/keycloak/providers/
     depends_on:
       - postgres
+      - maildev
+
+  maildev:
+    image: maildev/maildev:latest
+    restart: unless-stopped
+    ports:
+      - "1080:1080"   # Web UI
+      - "1025:1025"   # SMTP
 
   postgres:
     image: postgres:15
