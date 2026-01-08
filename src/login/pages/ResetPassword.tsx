@@ -1,5 +1,5 @@
 import type { PageProps } from "../types";
-import graLogo from "../../login/assets/img/gra.png";
+import graLogo from "../assets/img/controller_logo.png";
 import { useState } from "react";
 
 function ResetPasswordPage(props: PageProps<"login-reset-password.ftl">) {
@@ -24,7 +24,7 @@ function ResetPasswordPage(props: PageProps<"login-reset-password.ftl">) {
           </div>
         ) : null}
       <div className="flex flex-col items-center justify-center font-poppins relative pt-20 px-4 sm:px-0">
-        <img src={graLogo} alt="gra logo" className="w-[80px] object-cover absolute sm:top-[110px] top-[110px] z-20 pb-10" />
+        <img src={graLogo} alt="ePayroll logo" className="w-[80px] object-cover absolute sm:top-[110px] top-[110px] z-20 pb-10" />
         <div className="w-full sm:w-[770px] overflow-hidden bg-white rounded-2xl shadow-2xl h-auto sm:h-[580px]">
           <div className="flex flex-col">
             <h1 className="w-full text-center text-3xl font-bold text-gray-800 pt-[100px] sm:pt-[140px]">Reset Password</h1>
@@ -48,7 +48,7 @@ function ResetPasswordPage(props: PageProps<"login-reset-password.ftl">) {
                     className={`w-full pl-12 pr-4 py-3 bg-gray-100 border-none rounded-md focus:outline-none focus:ring-2 ${
                       hasUsernameError ? "focus:ring-red-300" : "focus:ring-gray-200"
                     } text-lg ${hasUsernameError ? "ring-2 ring-red-300" : ""}`}
-                    placeholder={realm.loginWithEmailAllowed ? "example@mts.com" : "username"}
+                    placeholder={realm.loginWithEmailAllowed ? "example@epayroll.com" : "username"}
                     name="username"
                     id="username"
                     autoComplete={realm.loginWithEmailAllowed ? "email" : "username"}

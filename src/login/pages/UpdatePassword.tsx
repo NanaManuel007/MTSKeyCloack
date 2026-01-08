@@ -1,5 +1,5 @@
 import type { PageProps } from "../types";
-import graLogo from "../../login/assets/img/gra.png";
+import graLogo from "../assets/img/controller_logo.png";
 import { useState } from "react";
 
 function UpdatePasswordPage(props: PageProps<"login-update-password.ftl">) {
@@ -30,7 +30,7 @@ function UpdatePasswordPage(props: PageProps<"login-update-password.ftl">) {
       <div className="flex flex-col items-center justify-center font-poppins relative pt-10 px-4 sm:px-0">
         <img
           src={graLogo}
-          alt="gra logo"
+          alt="ePayroll logo"
           className="w-[80px] object-cover absolute sm:top-[70px] top-[60px] z-20 pb-10"
         />
         <div className="w-full sm:w-[770px] overflow-hidden bg-white rounded-2xl shadow-2xl h-auto sm:h-[610px]">

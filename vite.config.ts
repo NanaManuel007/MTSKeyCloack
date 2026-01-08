@@ -8,9 +8,13 @@ export default defineConfig({
         react(),
         keycloakify({
             accountThemeImplementation: "none",
-            environmentVariables :[
-                {name : "TERMS_AND_POLICY_URL", default:"https://www.google.com/"},
-                {name : "FORGOT_PASSOWRD", default:"https://www.google.com/"}
+            keycloakVersionTargets: {
+                "22-to-25": "gh-pay-admin-for-kc-22-to-25.jar",
+                "all-other-versions": "gh-pay-admin-for-kc-all-other-versions.jar"
+            },
+            environmentVariables: [
+                { name: "TERMS_AND_POLICY_URL", default: "https://www.google.com/" },
+                { name: "FORGOT_PASSOWRD", default: "https://www.google.com/" }
             ]
         })
     ]

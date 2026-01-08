@@ -1,5 +1,5 @@
 
-import { I18n } from "../../login/i18n";
+import { I18n } from "../i18n";
 import { CSSProperties, MouseEvent, useState } from "react";
 const LanguageSelect = ({ i18n, style }: { i18n: I18n, style?: CSSProperties }) => {
   const { currentLanguage, enabledLanguages } = i18n

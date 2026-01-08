@@ -1,5 +1,5 @@
 {
-    "name": "mts",
+    "name": "epayroll",
     "version": "0.0.0",
     "description": "Starter for Keycloakify 11",
     "repository": {
@@ -11,6 +11,7 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "build-keycloak-theme": "npm run build && keycloakify build",
+        "postbuild-keycloak-theme": "mkdir -p ../themes && rm -f ../themes/gh-pay-admin-for-kc-22-to-25.jar ../themes/gh-pay-admin-for-kc-all-other-versions.jar && cp -f ./dist_keycloak/gh-pay-admin-for-kc-22-to-25.jar ../themes/ && cp -f ./dist_keycloak/gh-pay-admin-for-kc-all-other-versions.jar ../themes/",
         "storybook": "storybook dev -p 6006",
         "format": "prettier . --write"
     },

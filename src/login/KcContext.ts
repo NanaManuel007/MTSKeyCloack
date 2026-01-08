@@ -7,6 +7,8 @@ export type KcContextExtension = {
     properties: Record<KcEnvName, string> & {};
 };
 
-export type KcContextExtensionPerPage = {};
+export type KcContextExtensionPerPage = {
+    "otp-form.ftl": {};
+};
 
 export type KcContext = ExtendKcContext<KcContextExtension, KcContextExtensionPerPage>;
